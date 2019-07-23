@@ -1,0 +1,103 @@
+{%- comment -%}
+  This is a required section for the Shopify Theme Store.
+  It is available in the "Featured Collection" section in the theme editor.
+
+  Theme Store required settings
+  - Collection
+
+  Theme Store optional settings
+  - Heading: title of the featured collection section
+{%- endcomment -%}
+<section id="homeFeaturedProducts" class="home-new cf">
+  <div class="container">
+    {% if section.settings.title != blank %}
+      <h5 class="tl title phone-only hide">{{ section.settings.title | escape }}</h5>
+    {% endif %}
+
+    {%- assign collection = collections[section.settings.collection] -%}
+
+    {% for product in collection.products limit: 4 %}
+    <article class="product-item product-item--index has-impression">
+      <div class="product-item__wrap">
+      <a href="{{ product.url | within: collection }}" class="featured-collection-item">
+        {% if product.featured_image != blank %}
+          <div class="featured-collection__image">
+            {% include 'responsive-image' with
+              image: product.featured_image,
+              max_width: 480,
+              max_height: 480
+            %}
+          </div>
+        {% endif %}
+
+        <p>{{ product.title | escape }}</p>
+        <span>
+          {% if product.compare_at_price > product.price %}
+            {% if product.price_varies %}
+              {%- assign sale_price = product.price | money -%}
+              {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+            {% else %}
+              {{ 'products.product.on_sale' | t }}
+              {{ product.price | money }}
+            {% endif %}
+          {% else %}
+            {% if product.price_varies %}
+              {%- assign price = product.price | money -%}
+              {{ 'products.product.from_text_html' | t: price: price }}
+            {% else %}
+              {{ product.price | money }}
+            {% endif %}
+          {% endif %}
+        </span>
+      </a>
+      </div>
+    </article>
+    {% else %}
+      {% for i in (1..4) %}
+        <article class="product-item product-item--index has-impression">
+          <div class="product-item__wrap">
+            <div class="featured-collection-item">
+              <figure class="product-item__photo">
+                <a class="product-item__photo-a product-ir-img" href="">
+                  {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                  {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
+                </a>
+              </figure>
+              <div class="product-item__desc">
+                <h3>{{ 'homepage.onboarding.product_title' | t }}</h3>
+                <div class="product-item__color">Marigold</div>
+                <div class="product-item__price desktop-only"><p>{{ 1999 | money }}</p></div>
+              </div>
+              <a href="/products/hooded-villain-marigold" class="product-item__details desktop-only" title="Hooded Villain / Marigold">View Details</a>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Hero collection",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Hero collection"
+      },
+      {
+        "id": "collection",
+        "type": "collection",
+        "label": "Collection"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero collection",
+        "category": "Collection"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,462 @@
+{%- comment -%}
+  This is a required section for the Shopify Theme Store.
+  It is available in the "Header" section in the theme editor.
+
+  Theme Store required settings
+  - Show announcement
+  - Text: message to announce
+  - Link: link of the announcement bar
+
+  Theme Store optional settings
+  - Home page only: only shows on the home page
+{%- endcomment -%}
+<div class="header__fixed cf" id="mainHdr">
+
+    <ul id="pageheader" class="list-reset">
+        <li class="header__logo">
+            <a href="/"></a>
+        </li>
+        <li id="mobileMenuWrapper" class="mobile-menu mobile-only">
+            <ul class="mobile-menu__list list-reset">
+
+                <li>
+                    <button type="button" class="mobile-menu__search icons btn-icon js-open-search"></button>
+                </li>
+                <li>
+                    <button type="button" class="mobile-menu__cart btn-icon icons js-open-cart"><span class="mobile-menu__count">0</span></button>
+                </li>
+                <li>
+                    <button type="button" class="mobile-menu__hamburger btn-icon icons js-open-menu"></button>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- /#pageheader -->
+
+    <div id="main-nav" class="header__left-nav desktop-only">
+        <div class="header__left-list">
+            <div class="header__top">
+                <ul class="index__list submenu__ul list-reset">
+
+                    <li class="submenu__li submenu__drop">
+                        <a class="submenu__link " href="/collections/all">Men's</a>
+
+                        <div class="submenu__wrap">
+                            <div class="submenu__inner submenu__inner--mens">
+
+                                <ul class="submenu__list list-reset" id="menu1">
+
+                                    <li class="submenu__list-title"><a class="submenu__link " href="/collections/new-arrivals">
+										Collection
+									</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="new-arrivals">
+                                        <a class="link-light link-light--gray" href="/collections/new-arrivals">New Arrivals</a>
+                                    </li>
+
+                                    <li class="" data-collection-handle="">
+                                        <a class="link-light link-light--gray" href="/collections/all">All</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="mainline">
+                                        <a class="link-light link-light--gray" href="/collections/mainline">Mainline</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="denim-guide">
+                                        <a class="link-light link-light--gray" href="/pages/denim-guide">Denim Wash Guide</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="tee-guide">
+                                        <a class="link-light link-light--gray" href="/pages/tee-guide">Tee Guide</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="exclusives-mens">
+                                        <a class="link-light link-light--gray" href="/collections/exclusives-mens">Exclusives</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="season-13-5">
+                                        <a class="link-light link-light--gray" href="/collections/season-13-5">Pre FW19</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="nike">
+                                        <a class="link-light link-light--gray" href="/collections/nike">Nike</a>
+                                    </li>
+
+                                </ul>
+
+                                <ul class="submenu__list list-reset" id="menu2">
+
+                                    <li class="submenu__list-title"><a class="submenu__link " href="/collections/mainline">
+										Category
+									</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="tees" data-product-image="https://johnelliott.imgix.net/products/CLASSIC_CREW_FLAT_BLACK_434x.jpg?v=1559759722&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/tees">Tees</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="hoodies" data-product-image="https://johnelliott.imgix.net/products/HOODED_VILLAIN_BLACK_FLAT_434x.jpg?v=1559859598&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/hoodies">Sweatshirts</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="sweats" data-product-image="https://johnelliott.imgix.net/products/RIO_SWEATPANTS_FLAT_BLACK_434x.jpg?v=1556753563&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/sweats">Sweatpants</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="denim" data-product-image="https://johnelliott.imgix.net/products/THE_CAST_2_RAW_INDIGO_FLAT_434x.jpg?v=1556753504&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/denim">Denim</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="outerwear" data-product-image="https://johnelliott.imgix.net/products/BLACKMEANS_RIDERS_JACKET_FLAT_PAINTED_BLUE_434x.jpg?v=1559772508&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/outerwear">Jackets</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="shirting" data-product-image="https://johnelliott.imgix.net/products/INCA_SHIRT_FLAT_BLACK_434x.jpg?v=1562035280&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/shirting">Shirts</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="pants" data-product-image="https://johnelliott.imgix.net/products/CARGO_PANTS_OLIVE_CAMO_FLAT_1_434x.jpg?v=1560801655&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/pants">Pants</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="shorts" data-product-image="https://johnelliott.imgix.net/products/CRIMSON_SHORTS_FLAT_BLACK_712x_6cfac352-a0d1-4efe-8d38-4e519fa77cd6_434x.jpg?v=1562538537&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/shorts">Shorts</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="tanks" data-product-image="https://johnelliott.imgix.net/products/OS_TANK_FLAT_BLACK_434x.jpg?v=1556753484&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/tanks">Tanks</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="shoes" data-product-image="https://johnelliott.imgix.net/products/JE_NIKE_VANDAL_BLACK_01_434x.jpg?v=1556753552&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/shoes">Shoes</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="accessories" data-product-image="https://johnelliott.imgix.net/products/SOCKS_GREEN_LIME_04_434x.jpg?v=1558472811&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/accessories">Accessories</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="gift-card">
+                                        <a class="link-light link-light--gray" href="/products/gift-card">Gift Card</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="submenu__li submenu__drop">
+                        <a class="submenu__link " href="/collections/all-womens">Women's</a>
+
+                        <div class="submenu__wrap">
+                            <div class="submenu__inner submenu__inner--womens">
+
+                                <ul class="submenu__list list-reset" id="menu1">
+
+                                    <li class="submenu__list-title"><a class="submenu__link " href="/collections/new-arrivals-womens">
+										Collection
+									</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="new-arrivals-womens">
+                                        <a class="link-light link-light--gray" href="/collections/new-arrivals-womens">New Arrivals</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="all-womens">
+                                        <a class="link-light link-light--gray" href="/collections/all-womens">All</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="womens-mainline">
+                                        <a class="link-light link-light--gray" href="/collections/womens-mainline">Mainline</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="exclusives-womens">
+                                        <a class="link-light link-light--gray" href="/collections/exclusives-womens">Exclusives</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="womens-spring-summer-19">
+                                        <a class="link-light link-light--gray" href="/collections/womens-spring-summer-19">SS19</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="nike-womens">
+                                        <a class="link-light link-light--gray" href="/collections/nike-womens">Nike</a>
+                                    </li>
+
+                                </ul>
+
+                                <ul class="submenu__list list-reset" id="menu2">
+
+                                    <li class="submenu__list-title"><a class="submenu__link " href="/collections/all-womens">
+										Category
+									</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="womens-tees-and-tops" data-product-image="https://johnelliott.imgix.net/products/JERSEY_RELAXED_TEE_WHITE_01_434x.jpg?v=1556753522&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/womens-tees-and-tops">Tees / Tops</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="denim-womens" data-product-image="https://johnelliott.imgix.net/products/BRADY_DENIM_SHORTS_DUST_01_434x.jpg?v=1557181711&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/denim-womens">Denim</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="sweatshirts-womens" data-product-image="https://johnelliott.imgix.net/products/SNYDER_CROPPED_CREW_BLACK_01_d48f9dce-2ac9-4831-b514-239d142d562c_434x.jpg?v=1556753624&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/sweatshirts-womens">Sweatshirts</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="sweatpants-womens" data-product-image="https://johnelliott.imgix.net/products/MATADOR_SWEATPANTS_BLACK_01_4e4c4078-1bc5-4751-b4d3-3af839830a6a_434x.jpg?v=1556753517&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/sweatpants-womens">Sweatpants</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="jackets-womens" data-product-image="https://johnelliott.imgix.net/products/RIDERS_JACKET_BLACK_01_434x.jpg?v=1556753541&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/jackets-womens">Jackets</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="womens-dresses-and-jumpsuits" data-product-image="https://johnelliott.imgix.net/products/MURPHY_RIB_DRESS_IVORY_01_434x.jpg?v=1556753875&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/womens-dresses-and-jumpsuits">Dresses / Jumpsuits</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="womens-shoes" data-product-image="https://johnelliott.imgix.net/products/JE_NIKE_AF1_01_434x.jpg?v=1539437629&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/womens-shoes">Shoes</a>
+                                    </li>
+
+                                    <li class="js-nav js-nav-hover" data-collection-handle="womens-jewelry" data-product-image="https://johnelliott.imgix.net/products/HOOP_EARRING_01_434x.jpg?v=1556753744&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50">
+                                        <a class="link-light link-light--gray" href="/collections/womens-jewelry">Jewelry</a>
+                                    </li>
+
+                                    <li class="js-nav" data-collection-handle="gift-card">
+                                        <a class="link-light link-light--gray" href="/products/gift-card">Gift Card</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="submenu__li submenu__solo desktop-only">
+                        <a class="submenu__link " href="/pages/media">Mixed Media</a>
+
+                        <div class="submenu__wrap mixed-media">
+                            <div class="submenu__inner">
+
+                                <div class="mixed-media__left">
+                                    <a href="/pages/tee-guide">
+                                        <figure class="ir">
+                                            <div class="tint">
+
+                                                <img data-src="https://johnelliott.imgix.net/files/TEEGUIDE_MM_TILE_1_274x.jpg?v=1561051477&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50" data-src-retina="https://johnelliott.imgix.net/files/TEEGUIDE_MM_TILE_1.jpg?v=1561051477&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50" class="lazy loaded" alt="TEE GUIDE" src="https://johnelliott.imgix.net/files/TEEGUIDE_MM_TILE_1.jpg?v=1561051477&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50" style="opacity: 1;">
+                                            </div>
+                                        </figure>
+                                        <h2>TEE GUIDE</h2>
+                                        <h3></h3>
+                                    </a>
+                                </div>
+
+                                <div class="mixed-media__right">
+                                    <a href="/pages/denim-guide" class="cf">
+                                        <figure>
+                                            <span class="ir">
+									<div class="tint">
+
+										<img data-src="https://johnelliott.imgix.net/files/DENIMGUIDE_MM_TILE_1_158x.jpg?v=1560898857&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50" data-retina-src="https://johnelliott.imgix.net/files/DENIMGUIDE_MM_TILE_1_316x.jpg?v=1560898857&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50" alt="DENIM WASH GUIDE" class="lazy loaded" src="https://johnelliott.imgix.net/files/DENIMGUIDE_MM_TILE_1_158x.jpg?v=1560898857&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50" style="opacity: 1;">
+									</div>
+								</span>
+                                        </figure>
+                                        <h2>DENIM WASH GUIDE</h2>
+                                        <h3></h3>
+                                    </a>
+                                    <a href="/pages/lebron-x-john-elliott-icon-black-event" class="cf">
+                                        <figure>
+                                            <span class="ir">
+									<div class="tint">
+
+										<img data-src="https://johnelliott.imgix.net/files/STORE_MM_TILE_1_bb1abdfe-668f-4e21-89ac-9e8c2b70e471_158x.jpg?v=1560899349&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50" data-retina-src="https://johnelliott.imgix.net/files/STORE_MM_TILE_1_bb1abdfe-668f-4e21-89ac-9e8c2b70e471_316x.jpg?v=1560899349&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50" alt="NIKE LEBRON JAMES X JOHN ELLIOTT ICON BLACK" class="lazy loaded" src="https://johnelliott.imgix.net/files/STORE_MM_TILE_1_bb1abdfe-668f-4e21-89ac-9e8c2b70e471_158x.jpg?v=1560899349&amp;auto=format&amp;lossless=false&amp;fm=jpeg&amp;q=50" style="opacity: 1;">
+									</div>
+								</span>
+                                        </figure>
+                                        <h2>NIKE LEBRON JAMES X JOHN ELLIOTT ICON BLACK</h2>
+                                        <h3>05.21.19 IN-STORE LAUNCH</h3>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <ul class="submenu__list list-reset">
+
+                    <li class="submenu__li mobile-only"><a href="/account">Sign Up</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /#main-nav -->
+
+    <div class="header__right">
+        <div class="header__top">
+
+            <ul class="header__right-list list-reset">
+
+                <li class="header__right-list--shipping">
+                    <a href="https://www.johnelliott.com/pages/shipping" class="header__right-link">
+				FREE SHIPPING ON ALL U.S. ORDERS
+			</a>
+                </li>
+
+                <li class="header__right-list--chat submenu__li submenu__drop">
+                    <button type="button" class="btn-icon icons js-open-support">Support</button>
+                    <div class="submenu__wrap">
+                        <div class="submenu__inner submenu__inner--support">
+                            <ul class="submenu__list list-reset submenu__list--">
+
+                                <li>
+                                    <a href="/pages/contact" class="icons submenu__link-chat submenu__link-chat--email link-light link-light--gray">Email
+						</a>
+                                </li>
+
+                                <li>
+                                    <button id="zdChatBtn" type="button" class="icons submenu__link-chat submenu__link-chat--live-chat link-light link-light--gray btn-link is-active" role="button">
+                                        Live Chat
+                                    </button>
+                                </li>
+
+                                <li>
+                                    <a href="/pages/faq" class="icons submenu__link-chat submenu__link-chat--faq link-light link-light--gray">FAQ
+						</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="header__right-list--search">
+                    <button type="button" class="btn-icon header__search-link icons js-open-search">Search</button>
+                </li>
+
+                <li class="header__right-list--login">
+
+                    <a href="/account" class="header__right-link">Sign Up</a>
+                </li>
+
+                <li class="header__right-list--cart">
+                    <button type="button" class="js-open-cart btn-icon" onclick="ga('send', 'event', { eventCategory: 'cartquickview', eventAction: 'cartquickview'});">Cart: <span class="cart-count">0</span>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="header__right-list--shipping mobile-only">
+        <a href="https://www.johnelliott.com/pages/shipping" class="header__right-link">
+			FREE SHIPPING ON ALL U.S. ORDERS
+		</a>
+    </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Announcement bar"
+      },
+      {
+        "type": "checkbox",
+        "id": "announcement_bar_enabled",
+        "label": "Show announcement",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "announcement_bar_home_page_only",
+        "label": "Show on home page only",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "announcement_bar_text",
+        "label": "Announcement text",
+        "default": "Announce something here"
+      },
+      {
+        "type": "url",
+        "id": "announcement_bar_link",
+        "label": "Announcement link",
+        "info": "Optional"
+      },
+      {
+        "type": "header",
+        "content": "Header"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo image"
+      },
+      {
+        "type": "range",
+        "id": "logo_max_width",
+        "min": 50,
+        "max": 450,
+        "step": 10,
+        "unit": "px",
+        "label": "Custom logo width",
+        "default": 250
+      },
+      {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Menu",
+        "default": "main-menu"
+      }
+    ]
+  }
+{% endschema %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "{{ shop.name }}",
+  {% if section.settings.logo %}
+    {% assign image_size = section.settings.logo.width | append:'x' %}
+    "logo": "https:{{ section.settings.logo | img_url: image_size }}",
+  {% endif %}
+  "sameAs": [
+    "{{ settings.social_twitter_link }}",
+    "{{ settings.social_facebook_link }}",
+    "{{ settings.social_pinterest_link }}",
+    "{{ settings.social_instagram_link }}",
+    "{{ settings.social_tumblr_link }}",
+    "{{ settings.social_snapchat_link }}",
+    "{{ settings.social_youtube_link }}",
+    "{{ settings.social_vimeo_link }}"
+  ],
+  "url": "{{ shop.url }}{{ page.url }}"
+}
+</script>
+
+{% if template.name == 'index' %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "{{ shop.name }}",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ shop.url }}/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "url": "{{ shop.url }}{{ page.url }}"
+    }
+  </script>
+{% endif %}
